@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:8999>
-   DocumentRoot "E:/git_t/9kvcd/public"
+   DocumentRoot "F:/yameGit/zend/public"
    ServerName .local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
     
-   <Directory "E:/git_t/9kvcd/public">
+   <Directory "F:/yameGit/zend/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
