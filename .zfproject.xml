@@ -14,9 +14,12 @@
         <controllerFile controllerName="Error"/>
         <controllerFile controllerName="Guestbook">
           <actionMethod actionName="index"/>
+          <actionMethod actionName="sign"/>
         </controllerFile>
       </controllersDirectory>
-      <formsDirectory enabled="false"/>
+      <formsDirectory>
+        <formFile formName="Guestbook"/>
+      </formsDirectory>
       <layoutsDirectory enabled="false"/>
       <modelsDirectory>
         <dbTableDirectory>
@@ -36,6 +39,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Guestbook">
             <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Guestbook">
+            <viewScriptFile forActionName="sign"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
