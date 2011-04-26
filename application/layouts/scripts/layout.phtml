@@ -13,12 +13,15 @@ echo $this->doctype()?>
 </div>
 <div id="header-navigation" style="float: right"><a
 	href="<?php
-	echo $this->url( array('controller' => 'guestbook' 
+	echo $this->url( array(
+		'controller' => 'guestbook' 
 	), 'default', true )?>">Guestbook</a></div>
 </div>
- 
+
+ <?php
+	echo $this->layout()->content?>
+	
 <?php
-echo $this->layout()->content?>
- 
+echo $this->placeholder( 'sidebar' )?>
 </body>
 </html>
